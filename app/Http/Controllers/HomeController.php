@@ -22,6 +22,14 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
+    // public function minutes()
+    // {
+    //     return view('/minutes', [
+    //         'posts' => Post::where('user_id', auth()->user()->id)->get()
+    //     ]);
+    // }
+
     public function index()
     {
         $users = User::count();
@@ -32,5 +40,10 @@ class HomeController extends Controller
         ];
 
         return view('home', compact('widget'));
+    }
+
+    public function input()
+    {
+        return view('input');
     }
 }

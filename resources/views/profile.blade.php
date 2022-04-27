@@ -2,7 +2,7 @@
 
 @section('main-content')
     <!-- Page Heading -->
-    <h1 class="h3 mb-4 text-gray-800">{{ __('Profile') }}</h1>
+    <h1 class="h3 mb-4 text-gray-800"><i class="bi bi-person"></i></i>{{ __('Profile') }}</h1>
 
     @if (session('success'))
         <div class="alert alert-success border-left-success alert-dismissible fade show" role="alert">
@@ -42,26 +42,6 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card-profile-stats">
-                                <span class="heading">22</span>
-                                <span class="description">Friends</span>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card-profile-stats">
-                                <span class="heading">10</span>
-                                <span class="description">Photos</span>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card-profile-stats">
-                                <span class="heading">89</span>
-                                <span class="description">Comments</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
